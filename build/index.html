@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <h1>Hello Netlify Take From Build…</h1>
+    <form name="contact" method="POST" netlify>
+      <p>
+        <label>First Name: <input type="text" name="firstName" /></label>
+      </p>
+      <p>
+        <label>Last Name: <input type="text" name="lastName" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Your Role: <select name="role[]" multiple>
+            <option value="leader">Leader</option>
+            <option value="follower">Follower</option>
+            <option value="ovver">Ovver</option>
+          </select></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+      </form>
+  </body>
+</html>
